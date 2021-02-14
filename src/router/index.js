@@ -224,7 +224,7 @@ const createRouter = () => new Router({
 })
 
 const router = createRouter()
-
+// test
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
   const newRouter = createRouter()
