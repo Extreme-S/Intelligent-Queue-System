@@ -1,4 +1,4 @@
-# vue-admin-template
+# Intelligent Queue System
 
 English | [简体中文](./README-zh.md)
 
