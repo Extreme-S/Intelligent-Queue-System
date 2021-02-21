@@ -6,7 +6,7 @@
         <span class="username text-muted">Iron Man</span>
         <span class="description">Shared publicly - 7:30 PM today</span>
       </div>
-      <p>
+      <p> 
         Lorem ipsum represents a long-held tradition for designers,
         typographers and the like. Some people hate it and argue for
         its demise, but others ignore the hate as they create awesome
