@@ -142,10 +142,11 @@ module.exports = {
     }],
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
-    'no-unused-vars': [2, {
-      'vars': 'all',
-      'args': 'none'
-    }],
+    // 'no-unused-vars': [2, {
+    //   'vars': 'none',
+    //   'args': 'none'
+    // }],
+    "no-unused-vars":"off",
     'no-useless-call': 2,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
@@ -193,6 +194,19 @@ module.exports = {
     'object-curly-spacing': [2, 'always', {
       objectsInObjects: false
     }],
-    'array-bracket-spacing': [2, 'never']
+    'array-bracket-spacing': [2, 'never'],
+
+    // 'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 'generator-star-spacing': 'off',
+    "vue/html-self-closing": ["error",{
+      "html": {
+        "void": "never",
+        "normal": "any",
+        "component": "any"
+      },
+      "svg": "always",
+      "math": "always"
+    }]
   }
 }
