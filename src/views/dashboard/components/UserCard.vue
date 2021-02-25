@@ -12,8 +12,8 @@
           :width="'100px'"
           :hoverable="false"
         >
-          <div>Hello admin</div>
-          <!-- {{ user.role }} -->
+          <div>Hello </div>
+          {{ user.name }}
         </pan-thumb>
       </div>
 
@@ -70,6 +70,7 @@ import PanThumb from '@/components/PanThumb'
 
 export default {
   components: { PanThumb },
+
   props: {
     user: {
       type: Object,
