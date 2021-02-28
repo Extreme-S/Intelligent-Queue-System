@@ -58,25 +58,16 @@ export const constantRoutes = [
     ]
   },
 
-  // 预约管理
+  // 检查队列
   {
-    path: '/reservation',
+    path: '/queue',
     component: Layout,
-    redirect: '/reservation/info',
-    name: 'Reservation',
-    meta: { title: '预约管理', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'info',
-        name: 'Info',
-        component: () => import('@/views/table/index'),
-        meta: { title: '预约信息', icon: 'table' }
-      },
-      {
-        path: 'setting',
-        name: 'Setting',
-        component: () => import('@/views/tree/index'),
-        meta: { title: '预约设置', icon: 'tree' }
+        path: 'index',
+        component: () => import('@/views/queue/index'),
+        name: 'Queue', // 设定路由的名字，一定要填写不然使用<keep-alive>时会出现各种问题
+        meta: { title: '检查队列', icon: 'el-icon-user-solid' }
       }
     ]
   },
