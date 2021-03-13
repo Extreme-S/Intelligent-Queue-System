@@ -1,29 +1,64 @@
 <template>
   <div>
     <el-card class="user-card" shadow="always">
-      <!-- 头像行 -->
+      <!-- 用户信心行 -->
       <el-row>
         <el-col :span="5">
-          <el-avatar :span="10" shape="square" :size="100" :fit="fill" :src="url"></el-avatar>
+          <el-avatar
+            :span="10"
+            shape="square"
+            :size="100"
+            :fit="fill"
+            :src="url"
+          ></el-avatar>
         </el-col>
 
-        <el-col :span="13">
-          <p><strong>姓名:</strong> 王小虎</p>
-          <p>
-            <span><strong>年龄:</strong> 32</span>
-            <span style="float:right;"><strong>性别:</strong> 男</span>
-          </p>
-          <p>
-            <span><strong>身份证:</strong> 421002******************</span>
-          </p>
+        <!-- 右侧信息 -->
+        <el-col :span="18">
+          <el-row>
+            <el-col :span="9">
+              <div class="user-info-text"><strong>姓名:</strong> 王小虎</div>
+              <div class="user-info-text"><strong>年龄:</strong> 32</div>
+            </el-col>
+
+            <el-col :span="9">
+              <div class="user-info-text"><strong>婚否:</strong> 未婚</div>
+              <div class="user-info-text"><strong>性别:</strong> 男</div>
+            </el-col>
+          </el-row>
+
+          <el-row>
+            <div class="user-info-text">
+              <strong>身份证号：</strong>421002************
+            </div>
+          </el-row>
         </el-col>
       </el-row>
 
-      <!-- 详细信息行 -->
-      <div>
-
-      </div>
-      <el-input class="text-area" type="textarea" rows="10" placeholder="请输入检查结果"></el-input>
+      <!-- 医院适配信息行 -->
+      <el-divider content-position="left">受检者详细信息</el-divider>
+      <el-row>
+        <el-col :span="12">
+          <p><strong>流水号：</strong></p>
+          <p><strong>登记号：</strong></p>
+          <p><strong>队列号：</strong></p>
+          <p><strong>体检套餐：</strong></p>
+          <p><strong>体检类型：</strong></p>
+        </el-col>
+        <el-col :span="12">
+          <p><strong>民族：</strong></p>
+          <p><strong>身高：</strong></p>
+          <p><strong>体重：</strong></p>
+          <p><strong>视力：</strong></p>
+          <p><strong>既往病史：</strong></p>
+        </el-col>
+      </el-row>
+      <el-input
+        class="text-area"
+        type="textarea"
+        rows="10"
+        placeholder="请输入检查结果"
+      ></el-input>
     </el-card>
   </div>
 </template>
@@ -32,7 +67,8 @@
 export default {
   data() {
     return {
-      url: 'https://img01.sogoucdn.com/net/a/04/link?appid=100520040&url=https://i02piccdn.sogoucdn.com/dd791843f8534019'
+      url:
+        'https://img01.sogoucdn.com/net/a/04/link?appid=100520040&url=https://i02piccdn.sogoucdn.com/dd791843f8534019'
     }
   }
 }
@@ -49,6 +85,8 @@ export default {
   position: absolute;
   bottom: 20px;
   width: 94%;
-
+}
+.user-info-text {
+  margin: 10px;
 }
 </style>
