@@ -12,7 +12,7 @@
         <el-table :data="tableData" style="width: 100%;height:40vh;">
           <el-table-column prop="name" label="姓名"> </el-table-column>
           <el-table-column prop="sex" label="性别"> </el-table-column>
-          <el-table-column prop="age" label="年龄"> </el-table-column>
+          <el-table-column prop="queue_num" label="队列号"> </el-table-column>
           <el-table-column prop="status" label="状态"> </el-table-column>
         </el-table>
       </div>
@@ -31,18 +31,26 @@ export default {
   data() {
     return {
       tableData: [
+
         {
           name: '王小虎',
           sex: '男',
-          age: '32',
+          queue_num: '8',
+          status: '诊断中'
+        },
+        {
+          name: '李四',
+          sex: '男',
+          queue_num: '9',
           status: '等待中'
         },
         {
-          name: '王小虎',
+          name: '张三',
           sex: '男',
-          age: '32',
-          status: '等待中'
+          queue_num: '7',
+          status: '换诊'
         }
+
       ]
     }
   }
