@@ -35,7 +35,7 @@
       </div>
       <!-- 开始检查 -->
       <div style="text-align:center">
-        <router-link :to="{ path: '/system' }">
+        <router-link :to="{ path: '/queue/index' }">
           <el-button type="success" round>开始检查</el-button>
         </router-link>
       </div>
