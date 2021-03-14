@@ -95,20 +95,16 @@ export const constantRoutes = [
     ]
   },
 
-  // 项目管理
+  // 记录管理
   {
     path: '/record',
     component: Layout,
-    alwaysShow: true,
-    redirect: '/record/index',
-    name: 'Record',
-    meta: { title: '记录管理', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'index',
         name: 'RecordList',
-        component: () => import('@/views/form/index'),
-        meta: { title: '队列记录', icon: 'form' }
+        component: () => import('@/views/examRecord/index'),
+        meta: { title: '记录管理', icon: 'form' }
       }
     ]
   },
