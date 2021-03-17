@@ -35,7 +35,7 @@
       <el-table-column label="体检类型" prop="type"> </el-table-column>
       <el-table-column label="检查项目/套餐" prop="item"> </el-table-column>
       <el-table-column>
-        <template slot="header" slot-scope="scope">
+        <template slot="header" slot-scope="{}">
           <el-input v-model="search" size="mini" placeholder="请输入姓名" />
         </template>
         <template slot-scope="scope">
