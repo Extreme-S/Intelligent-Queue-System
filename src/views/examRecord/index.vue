@@ -25,6 +25,7 @@
     </el-card>
 
     <el-table
+
       :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
       style="width: 100%;"
     >
@@ -86,44 +87,44 @@ export default {
       formLabelWidth: '120px',
       value1: '',
       tableData: [{
-        id: 7,
-        date: '2016-05-02',
+        id: 'TJRY0102002',
+        date: '2021-2-21',
         name: '埃尔虎',
         type: '个人体检',
         item: '眼科 等 3项'
       }, {
-        id: 5,
-        date: '2016-05-04',
+        id: 'TJRY0102005',
+        date: '2021-2-23',
         name: '阿法狗',
         type: '入职体检',
         item: '入职体检套餐2'
       }, {
-        id: 3,
-        date: '2016-05-01',
+        id: 'TJRY0102252',
+        date: '2021-2-21',
         name: '屠洪刚',
         type: '个人体检',
         item: '心血管 等 5项'
       }, {
-        id: 6,
-        date: '2016-05-03',
+        id: 'TJRY0102152',
+        date: '2021-2-26',
         name: '杨海涛',
         type: '入职体检',
         item: '入职体检套餐1'
       }, {
-        id: 4,
-        date: '2016-05-03',
+        id: 'TJRY0102025',
+        date: '2021-2-8',
         name: '杨灿昱',
         type: '入职体检',
         item: '入职体检套餐1'
       }, {
-        id: 2,
-        date: '2016-05-03',
+        id: 'TJRY0102026',
+        date: '2021-2-19',
         name: '宋玉楼',
         type: '入职体检',
         item: '入职体检套餐1'
       }, {
-        id: 1,
-        date: '2016-05-03',
+        id: 'TJRY0102018',
+        date: '2021-2-22',
         name: '宇浩',
         type: '入职体检',
         item: '入职体检套餐1'

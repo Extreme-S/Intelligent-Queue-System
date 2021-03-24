@@ -1,90 +1,25 @@
-# Intelligent Queue System
 
-English | [简体中文](./README-zh.md)
+## 智e体检——医生端网页管理系统
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
-
-**Live demo:** http://panjiachen.github.io/vue-admin-template
-
-
-**The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
-
-## Build Setup
-
+### 项目简介：
+  当前的许多医疗机构，对于体检只有人员信息管理系统，并不具备全自动化的体检排队系统，他们的体检安排只能依靠工作人员多年的工作经验，这必然可能降低体检效率，甚至导致错误。
+为了更好地服务体检市民，缩短体检的等待时间，充分利用医疗机构的资源，提高体检的工作效率，创造更多的社会价值，本项目特针对体检项目的排队问题进行研究和设计，让体检人员能够提前预约，按照预约时间并根据体检排队系统得出的项目体检次序进行体检，系统可根据当前排队状况来主动给未体检人员调配最优的排队队列，使得体检人员的等待时间最短，最大限度地缩短受检者和医生的等待时间，充分利用医疗机构的资源，实现体检的排队自动优化。
+在体检排队自动优化系统发展完善后，可以进一步在很多场所进行推广。如：医院就诊，建立门诊电子排队系统并应用于全院的挂号、就诊、收费、发药、检验、检查等，使整个医院有机地结合起来。明星演唱会，用户可以根据自动优化排队系统有序进场离场，提高时间利用效率。旅游景点，自动优化排队系统统计不同景点的人数，动态规划游览路线。等等。
+### 安装使用说明
 ```bash
-# clone the project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
+# 克隆项目
+git clone https://github.com/Extreme-S/Intelligent-Queue-System.git
 
-# enter the project directory
-cd vue-admin-template
+# 进入项目目录
+cd Intelligent-Queue-System
 
-# install dependency
+# 安装依赖
 npm install
 
-# develop
+# 如果npm install失败 建议不要直接使用 cnpm 安装，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
+
+# 启动服务
 npm run dev
 ```
 
-This will automatically open http://localhost:9528
-
-## Build
-
-```bash
-# build for test environment
-npm run build:stage
-
-# build for production environment
-npm run build:prod
-```
-
-## Advanced
-
-```bash
-# preview the release environment effect
-npm run preview
-
-# preview the release environment effect + static resource analysis
-npm run preview -- --report
-
-# code format check
-npm run lint
-
-# code format check and auto fix
-npm run lint -- --fix
-```
-
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
-
-## Demo
-
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
-
-## Extra
-
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
-
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-
-## Related Project
-
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-- [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-
-- [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
-
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
-
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen

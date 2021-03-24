@@ -39,26 +39,21 @@
       <el-divider content-position="left">受检者详细信息</el-divider>
       <el-row>
         <el-col :span="12">
-          <p><strong>流水号：</strong></p>
-          <p><strong>登记号：</strong></p>
-          <p><strong>队列号：</strong></p>
-          <p><strong>体检套餐：</strong></p>
-          <p><strong>体检类型：</strong></p>
+          <p><strong>流水号：</strong>8</p>
+          <p><strong>登记号：</strong>TJRY0102001</p>
+          <p><strong>队列号：</strong>8</p>
+          <p><strong>体检套餐：</strong>无</p>
+          <p><strong>体检类型：</strong>个人体检</p>
         </el-col>
         <el-col :span="12">
-          <p><strong>民族：</strong></p>
-          <p><strong>身高：</strong></p>
-          <p><strong>体重：</strong></p>
-          <p><strong>视力：</strong></p>
-          <p><strong>既往病史：</strong></p>
+          <p><strong>民族：</strong>汉族</p>
+          <p><strong>身高：</strong>178 cm</p>
+          <p><strong>体重：</strong>68 kg</p>
+          <p><strong>视力：</strong>良好</p>
+          <p><strong>既往病史：</strong>无</p>
         </el-col>
       </el-row>
-      <el-input
-        class="text-area"
-        type="textarea"
-        rows="10"
-        placeholder="请输入检查结果"
-      ></el-input>
+      <el-input v-model="user.info" class="text-area" type="textarea" rows="10" placeholder="请输入检查结果"></el-input>
     </el-card>
   </div>
 </template>
@@ -67,8 +62,9 @@
 export default {
   data() {
     return {
+      user: {},
       url:
-        'https://img01.sogoucdn.com/net/a/04/link?appid=100520040&url=https://i02piccdn.sogoucdn.com/dd791843f8534019'
+        'https://i04piccdn.sogoucdn.com/aea970c68f08d679'
     }
   }
 }
