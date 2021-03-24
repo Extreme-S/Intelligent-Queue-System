@@ -8,7 +8,7 @@
 
         <el-col :span="18" :gutter="20">
           <el-row>
-            <el-card> <calendar /> </el-card>
+            <el-card> <tp-container /> </el-card>
           </el-row>
 
           <el-row :gutter="20">
@@ -31,13 +31,13 @@
 <script>
 import { mapGetters } from 'vuex'
 import UserCard from './components/UserCard'
-import Calendar from './components/Calendar'
+import TpContainer from './components/TpContainer'
 import ItemCard from './components/ItemCard'
 import BarChart from './components/BarChart'
 
 export default {
   name: 'Profile',
-  components: { UserCard, Calendar, ItemCard, BarChart },
+  components: { UserCard, TpContainer, ItemCard, BarChart },
   data() {
     return {
       user: {},
